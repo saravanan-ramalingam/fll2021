@@ -1,10 +1,11 @@
 repos:
   - repo: git://github.com/pre-commit/pre-commit-hooks
+    rev: v0.9.2
     hooks:
       - id: check-added-large-files
         args: [ '--maxkb=500' ]
   - repo: https://github.com/ambv/black
+    rev: "19.10b0"
     hooks:
       - id: black
-        args:
-          - [ --config=pyproject.toml ]
+        args: [ --config=pyproject.toml ]
